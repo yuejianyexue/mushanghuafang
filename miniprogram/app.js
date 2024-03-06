@@ -1,5 +1,9 @@
 // app.js
+import {toast} from './utils/extendApi'
 App({
+onShow(){
+  toast()
+},
   onLaunch() {
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
