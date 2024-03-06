@@ -1,0 +1,5 @@
+<button type="primary" bind:tap="handler">绑定事件</button>
+<input placeholder="输入框" type="text" bindinput="getInputval "/>
+<checkbox checked="{{false}}" />
+<view>
+</view>
