@@ -1,0 +1,6 @@
+<van-empty
+  image="../../../../assets/images/avatar.png"
+  description="请点击下方的按钮，授权登陆您的账户～"
+> 
+<van-button class="bottom-button" round type="danger" bind:tap="login" >点击授权登录</van-button>
+</van-empty>

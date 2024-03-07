@@ -1,13 +1,13 @@
 
 .cate-ctnr{
   display:flex;
-
+  margin-top: 20rpx;
   .cate-left{
     width: 220rpx;
     height: 100vh;
     background: rgb(255, 255, 255) !important;
     padding-top: 20rpx;
-
+    border-radius: 10rpx;
     .cate-item{
       height: 100rpx;
       text-align: center;
@@ -35,12 +35,19 @@
   width: 100%;
   height: 100vh;
   flex-wrap: wrap;
-  background-color: #ffffff !important;
+  background-color: aliceblue;
   margin-left: 8rpx;
+  .back{
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 15rpx;
+    border-radius: 10rpx;
   .item-right{
     width: 33%;
     float: left;
-    margin-top: 30rpx;
+    margin-top: 15rpx;
+    margin-bottom: 15rpx;
     .navigator{
       display: flex;
       flex-direction: column;
@@ -53,11 +60,13 @@
     text{
       font-size: 30rpx;
       margin-top: 20rpx;
-    }
+    }}
   }
 }
 .search{
   height: 80rpx;
   background-color: lightseagreen;
   text-align: center;
+  border-radius: 10rpx; 
+  margin: 10rpx;
 }

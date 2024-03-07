@@ -1,2 +1,3 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<!-- <text>pages/profile/profile.wxml</text> -->
+<navigator open-type="navigate" class="login-nav" url="/packageA/pages/login/login">登录</navigator>

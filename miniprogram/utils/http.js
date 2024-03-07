@@ -1,0 +1,1 @@
+import WxRequest from 'mina-request'

@@ -1,4 +1,4 @@
-<view>
+<view style="background-color: aliceblue;">
 <!-- 分类页容器 -->
 <!-- 搜索栏 -->
 <view class="search"> 搜索栏占位</view>
@@ -9,12 +9,17 @@
   </scroll-view>
   <!-- 右侧选项 -->
   <scroll-view class="cate-right" scroll-y>
+  <view class="back">
+  <image style="width: 96%; height: 250rpx;margin: 10rpx;border-radius: 10rpx;" src="../../assets/images/elder.jpg" mode="aspectFill"/>
+  </view>
+  <view class="back">
     <view wx:for="{{10}}" wx:key="index" class="item-right">
     <navigator class="navigator" url="#">
     <image src="../../assets/images/cate-1.png" mode=""/>
     <text class="itemText">品类{{index+1}}</text>
     </navigator>
     </view>
+  </view>
   </scroll-view>
 </view>
 </view>
