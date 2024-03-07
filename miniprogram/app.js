@@ -1,8 +1,12 @@
 // app.js
-import {toast} from './utils/extendApi'
+import {modal, toast} from './utils/extendApi'
 App({
 onShow(){
   toast()
+  
+  // 获取当前小程序的账号信息
+  // const accountInfo = wx.getAccountInfoSync()
+  // console.log(accountInfo.miniProgram.envVersion) 
 },
   onLaunch() {
     // 展示本地存储能力

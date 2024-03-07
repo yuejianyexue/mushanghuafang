@@ -1,12 +1,24 @@
 // packageA/pages/login/login.js
+import {toast} from '../../../utils/extendApi'
+import {reqLogin} from '../../../api/user'
 Page({
   // 授权登录
   login(){
     // 使用wx.login获取用户的临时登录凭证
-wx.login({
+  wx.login({
   // timeout: 0,
-  success: ({code}) => {
+  success: async ({code}) => {
     console.log(code)
+    if(code){
+      // 获取到临时登录凭证以后，传递给服务器
+    const res =  await reqLogin(code)
+    console.log(res)
+
+    }else{
+      toast({
+        title:'授权失败，重新授权'
+      })
+    }
   },
   // fail: (err) => {},
   // complete: (res) => {},

@@ -89,4 +89,13 @@
     </view>
   </scroll-view>
 </view>
+<!-- 更多推荐 -->
+<view class="good-more">更多推荐</view>
+<view  class="show">
+<view wx:for="{{20}}"class="{{index%6==0 && 'top'}}">
+<navigator  url="/">
+<image src="../../assets/images/floor/{{ index%5 +1}}.png" mode="aspectFit"/>
+</navigator>
+</view>
+</view>
 

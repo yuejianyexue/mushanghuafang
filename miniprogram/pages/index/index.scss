@@ -84,3 +84,40 @@ page{
    
 }
 }
+// 更多推荐区
+.good-more{
+  font-size: 45rpx;
+  text-align: center;
+  background-color: #fff;
+  padding: 10rpx;
+  border-radius: 15rpx;
+}
+.show{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 20rpx;
+  grid-gap: 10rpx;
+  view{
+  background-color: #fff;
+  border-radius: 30rpx;
+  }
+  navigator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+  image{
+    width: 90%;
+    height: 20vh;
+    border-radius: 40rpx;
+    margin: 10rpx;
+  }
+}
+.top{
+  grid-row: span 2;
+  grid-column: span 2;
+  image{
+    height: 40vh;
+    margin-top: 15rpx;
+  }
+}

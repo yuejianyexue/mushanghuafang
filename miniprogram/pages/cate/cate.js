@@ -1,18 +1,30 @@
 // pages/cate/cate.js
+import {} from '../../api/category'
+import { reqCategoryData } from '../../api/category'
 Page({
   itemActive(e){
     this.setData({
-     tab:e.currentTarget.dataset.x
+     tab:e.currentTarget.dataset.index
 })
   },
-
+  async getCategoryData(){
+    const res = await reqCategoryData()
+    console.log(res.data)
+    if(res.code === 200){
+      this.setData({
+        itemList:res.data
+      })
+    }
+  } ,
   /**
    * 页面的初始数据
    */
   data: {
-    // num = 1,
-    itemList:['热门分类','鲜花','蛋糕','永生花','精美礼品'],
-    itemClass:'cate-item',
+  
+      itemList:[]  ,// 商品分类数据
+      tab:0,
+    // itemList:['热门分类','鲜花','蛋糕','永生花','精美礼品'],
+    // itemClass:'cate-item',
   },
 
   /**
@@ -20,6 +32,8 @@ Page({
    */
   onLoad(options) {
     // itemActive(0)
+    // 调用商品分类数据的方法
+    this.getCategoryData()
   },
 
   /**

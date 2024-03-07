@@ -5,7 +5,7 @@
 <view class="cate-ctnr" >
   <!--分类页左侧导航  -->
   <scroll-view class="cate-left" scroll-y>
-    <view catch:tap="itemActive" data-x="{{index}}" class="cate-item {{tab==index &&'active'}}" wx:for="{{itemList}}" >{{item}}</view>
+    <view catch:tap="itemActive" data-index="{{index}}" class="cate-item {{tab==index ?'active':''}}" wx:for="{{itemList}}" wx:key="id" >{{item.name}}</view>
   </scroll-view>
   <!-- 右侧选项 -->
   <scroll-view class="cate-right" scroll-y>
@@ -13,10 +13,10 @@
   <image style="width: 96%; height: 250rpx;margin: 10rpx;border-radius: 10rpx;" src="../../assets/images/elder.jpg" mode="aspectFill"/>
   </view>
   <view class="back">
-    <view wx:for="{{10}}" wx:key="index" class="item-right">
+    <view wx:for="{{itemList[tab].children}}" wx:key="index" class="item-right">
     <navigator class="navigator" url="#">
-    <image src="../../assets/images/cate-1.png" mode=""/>
-    <text class="itemText">品类{{index+1}}</text>
+    <image src="{{item.imageUrl}}" mode=""/>
+    <text class="itemText">{{item.name}}</text>
     </navigator>
     </view>
   </view>
