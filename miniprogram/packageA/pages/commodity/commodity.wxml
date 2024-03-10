@@ -1,0 +1,51 @@
+<view class="commodity">
+<!-- 展示&价格-->
+<view class="show">
+  <view class="swiper">
+    <swiper autoplay="true" interval="3000" indicator-dots="true" indicator-color="#fff" indicator-active-color="#f3514f" circular="true">
+    <swiper-item>
+    <image src="../../../assets/images/floor/1.png" mode="aspectFill"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../../assets/images/floor/2.png" mode="aspectFill"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../../assets/images/floor/3.png" mode="aspectFill"/>
+    </swiper-item>
+    </swiper>
+  </view>
+  <view class="price">
+  <view class="price-head">
+  <text class="price-1" >¥287</text>
+  <text class="price-2">提前预定折扣价<text>8.2折</text></text>
+  </view>
+  <view class="title">
+  <text class="new">新品</text><text class="new1">美丽绽放/节日定制款</text>
+  </view >
+  <text class="minute">粉丝戴安娜12支，紫色紫罗兰4枝，粉色牡丹3枝</text>
+  <text class="minute-1">粉色系玫瑰节日定制款</text>
+  </view>
+</view>
+<!-- 配送&介绍-->
+<view class="psjs">
+<view class="peisong">
+<view>送至</view>
+<view>地址选择占位</view>
+</view>
+<view class="jieshao">
+<view class="jieshao-left">
+<view>花语</view>
+<view>材料</view>
+<view>配送</view>
+</view>
+<view class="jieshao-right">
+<view></view>
+<view></view>
+<view></view>
+</view>
+</view>
+</view>
+
+<!-- 评价 -->
+<!-- 详情 -->
+</view>

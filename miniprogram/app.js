@@ -1,6 +1,9 @@
 // app.js
 import {modal, toast} from './utils/extendApi'
 App({
+  data:{
+    commodityTestURL:'/packageA/pages/commodity/commodity'
+  },
 onShow(){
   toast()
   

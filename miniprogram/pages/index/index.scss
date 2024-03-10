@@ -103,13 +103,14 @@ page{
   }
   navigator{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
  }
   image{
     width: 90%;
     height: 20vh;
-    border-radius: 40rpx;
+    border-radius: 15rpx;
     margin: 10rpx;
   }
 }
@@ -118,6 +119,10 @@ page{
   grid-column: span 2;
   image{
     height: 40vh;
+    border-radius: 30rpx;
     margin-top: 15rpx;
+  }
+  text{
+    margin-top: 30rpx;;
   }
 }

@@ -9,8 +9,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/profile/profile",
-          "pathName": "pages/profile/profile",
+          "name": "我的",
+          "pathName": "pages/my/my",
           "query": "",
           "launchMode": "default",
           "scene": null

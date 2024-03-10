@@ -1,0 +1,24 @@
+<view class="contain">
+<view class="setting-list avatar-contain">
+<text>头像</text>
+<view class="avatar">
+<button class="none">
+  <image src="{{userInfo.headimugurl || '../../../assets/images/avatar.png'}}" mode=""/>
+</button>
+</view>
+</view>
+
+
+
+
+
+
+
+
+
+  <navigator open-type="navigate" class="login-nav" url="/packageA/pages/login/login">登录</navigator>
+
+
+
+
+</view>

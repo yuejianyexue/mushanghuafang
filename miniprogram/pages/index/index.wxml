@@ -21,29 +21,10 @@
 </view>
 <!-- 组件3 商品导航 -->
 <view class="good-nav">
-  <view>
-  <navigator url="/pages/list/list">
-  <image src="../../assets/images/cate-1.png" mode=""/>
-    <text>鲜花玫瑰</text></navigator>
-  </view>
-  <view>
-  <navigator url="/pages/list/list">
-  <image src="../../assets/images/cate-1.png" mode=""/>
-    <text>鲜花玫瑰</text></navigator>
-  </view>
-  <view>
-  <navigator url="/pages/list/list">
-  <image src="../../assets/images/cate-1.png" mode=""/>
-    <text>鲜花玫瑰</text></navigator>
-  </view>
-  <view>
-  <navigator url="/pages/list/list">
-  <image src="../../assets/images/cate-1.png" mode=""/>
-    <text>鲜花玫瑰</text></navigator>
-  </view>
-  <view>
-  <navigator url="/pages/list/list">
-  <image src="../../assets/images/cate-1.png" mode=""/>
+  
+  <view wx:for="{{5}}" wx:key="index">
+  <navigator open-type="navigate" url="/packageA/pages/commodity/commodity">
+  <image src="../../assets/images/category/cate-{{index+1}}.png" mode=""/>
     <text>鲜花玫瑰</text></navigator>
   </view>
 </view>
@@ -51,11 +32,11 @@
 <view class="good-hot">
   <scroll-view scroll-x="true" class="scroll-x">
     <view>
-    <view class="good-item">
+    <navigator open-type="navigate" url="/packageA/pages/commodity/commodity" class="good-item">
       <image src="/assets/images/floor/1.png"></image>
       <text>鲜花玫瑰</text>
       <text>66.6元</text>
-    </view>
+    </navigator>
     </view>
     <view>
     <view class="good-item">
@@ -92,9 +73,10 @@
 <!-- 更多推荐 -->
 <view class="good-more">更多推荐</view>
 <view  class="show">
-<view wx:for="{{20}}"class="{{index%6==0 && 'top'}}">
+<view wx:for="{{20}}" wx:key="index"  class="{{index%6==0 && 'top'}}">
 <navigator  url="/">
-<image src="../../assets/images/floor/{{ index%5 +1}}.png" mode="aspectFit"/>
+<image src="../../assets/images/floor/{{ index%5 +1}}.png" mode="aspectFill"/>
+<text>鲜花玫瑰</text>
 </navigator>
 </view>
 </view>

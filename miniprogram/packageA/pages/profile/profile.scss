@@ -1,0 +1,65 @@
+/* pages/profile/profile.wxss */
+.login-nav{
+  background-color:#f3514f;
+  width: 100rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  margin: 20rpx;
+  padding: 20rpx;
+}
+
+.avatar image {
+  width: 90rpx;
+  height: 90rpx;
+  position: relative;
+  top: 18rpx;
+  left: 16rpx;
+  border-radius: 50%;
+}
+
+.setting-list{
+  padding: 0 20px;
+  margin-bottom: 20rpx;
+  background-color: #Fff  ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  border-bottom: 1rpx solid;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+  padding-right: 50rpx;
+  &::after{
+    content: '\e6c6';
+    font-family: 'iconfont';
+    position: absolute;
+    top: 50%;
+    right: 0rpx;
+    font-size: 24rpx;
+    transform: translateY(-50%);
+    color: #999;
+    padding-right: 12rpx;
+
+  }
+  text:first-child{
+    color: #333;
+    font-size: 30rpx;
+  }
+}
+.avatar-contain {
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.nickname {
+  padding-right: 60rpx;
+  color: #333;
+  font-size: 30rpx;
+}
+
+button {
+  background-color: #fff;
+}
+button:after {
+  border: none;
+}
