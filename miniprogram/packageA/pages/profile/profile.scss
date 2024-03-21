@@ -1,65 +1,85 @@
-/* pages/profile/profile.wxss */
-.login-nav{
-  background-color:#f3514f;
-  width: 100rpx;
-  border-radius: 50rpx;
-  text-align: center;
-  margin: 20rpx;
-  padding: 20rpx;
+.contain{
+  background-color: rgba(153, 153, 153, 0.1);
+  height: 100vh;
+  .profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30rpx;  
+    padding: 0rpx 10rpx;
+    height: 100rpx;
+    margin: 20rpx;
+    position:relative;
+    &::after {
+      content: '\e60b';
+      font-family: 'iconfont';
+      position: absolute;
+      right: 0px;
+      font-size: 26rpx;
+      color: #999;
+      padding-right: 10rpx;
+    }
+    text:first-child {
+      color: #333;
+      font-size: 30rpx;
+    }
+    text:last-child{
+    padding:0rpx 50rpx;
+    }
+  }
 }
-
+.avatar{
+  display: flex;}
 .avatar image {
-  width: 90rpx;
-  height: 90rpx;
-  position: relative;
-  top: 18rpx;
-  left: 16rpx;
-  border-radius: 50%;
-}
-
-.setting-list{
-  padding: 0 20px;
-  margin-bottom: 20rpx;
-  background-color: #Fff  ;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-around;
-  border-bottom: 1rpx solid;
+  width: 100rpx;
   height: 100rpx;
-  line-height: 100rpx;
   position: relative;
-  padding-right: 50rpx;
-  &::after{
-    content: '\e6c6';
-    font-family: 'iconfont';
-    position: absolute;
-    top: 50%;
-    right: 0rpx;
-    font-size: 24rpx;
-    transform: translateY(-50%);
-    color: #999;
-    padding-right: 12rpx;
+  border-radius: 50%;
+  
+}
+button{
+  background-color: #FFf;
+  padding: 0rpx;
+  height: 100%;
+}
 
+.saveBotton{
+  display: flex;
+
+  justify-content: center;
+  .van-button{
+    width: 40vh;
   }
-  text:first-child{
+}
+/* 更新用户昵称 */
+.van-field__control {
+  border: 1px solid #efefef !important;
+  min-height: 60rpx !important;
+  line-height: 60rpx !important;
+  margin: 16rpx !important;
+  padding-left: 20rpx !important;
+  border-radius: 16rpx;
+}
+
+/* 更新用户昵称 */
+
+// 更新用户名
+.dialog-content {
+  display: flex;
+
+  .cancel {
     color: #333;
-    font-size: 30rpx;
+    font-size: 34rpx;
   }
 }
-.avatar-contain {
-  height: 120rpx;
-  line-height: 120rpx;
-}
-.nickname {
-  padding-right: 60rpx;
-  color: #333;
-  font-size: 30rpx;
-}
 
-button {
-  background-color: #fff;
-}
-button:after {
-  border: none;
+.input-name {
+  border: 1px solid #ccc;
+  margin: 40rpx 40rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 16rpx;
+  padding: 6rpx 12rpx;
+  padding-left: 20rpx;
 }

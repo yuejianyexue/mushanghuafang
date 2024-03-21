@@ -16,3 +16,11 @@ export const reqLogin = (code)=>{
  export const reqUserInfo = () =>{
    return http.get('/weixin/getuserInfo')
  }
+/**
+ * @description 更新用户信息
+ * @param {*} userInfo 最新的头像和昵称
+ * @returns Promise
+ */
+ export const reqUpdateUserInfo = (userInfo)=>{
+  return http.post('/weixin/updateUser',userInfo)
+ }

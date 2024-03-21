@@ -1,14 +1,44 @@
 <view class="contain">
-<view class="setting-list avatar-contain">
-<text>头像</text>
-<view class="avatar">
-<button class="none">
-  <image src="{{userInfo.headimugurl || '../../../assets/images/avatar.png'}}" mode=""/>
-</button>
-</view>
-</view>
+  <view  style="height: 120rpx;" class="profile">
+    <text>头像</text>
+    <view class="avatar ">
+      <button size="mini"  open-type="chooseAvatar" bindchooseavatar="chooseAvatar" >
+        <image src="{{userInfo.headimgurl || '../../../assets/images/avatar.png'}}"  />
+      </button>
+    </view>
+  </view>
 
-  <navigator open-type="navigate" class="login-nav" >保存</navigator>
+  <view class="profile" bindtap="onUpdateNickName">
+  <text>昵称</text>
+  <text class="nickname">{{ userInfo.nickname || '默认昵称' }}</text>
 
+  </view>
+  <view class="saveBotton">
+    <van-button round type="danger" bindtap="updateUserInfo" >保存</van-button>
+  </view>
+  <!-- 修改昵称 -->
+  <van-dialog
+    custom-style="position: relative"
+    use-slot
+    title="修改昵称"
+    show="{{ isShowPopup }}"
+    showConfirmButton="{{ false }}"
+    showCancelButton="{{ false }}"
+    transition="fade"
+  >
+  <!-- 用from组件包裹input输入框和按钮组件 -->
+    <form bindsubmit="getNickName">
+    <!-- 给input添加type和name属性，
+    type属性设置为“nickname”会自动提示使用微信昵称
+    from会自动收集带有name属性的表单元素值 -->
+      <input type="nickname" name="nickname" class="input-name" value="{{ userInfo.nickname }}" />
+      <view class="dialog-content">
+      <!-- 将form-type属性设置为reset，含义是重置表单 -->
+        <button class="cancel" bindtap="cancelForm" form-type="reset">取消</button>
+      <!-- 将form-type属性设置为submit，将按钮设置为提交按钮，触发from组件的提交事件-->
 
+        <button class="confirm" type="primary" form-type="submit">确定</button>
+      </view>
+    </form>
+  </van-dialog>
 </view>
