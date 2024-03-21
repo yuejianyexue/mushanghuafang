@@ -9,6 +9,27 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/profile/profile",
+          "pathName": "packageA/pages/profile/profile",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "授权登录",
+          "pathName": "packageA/pages/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "内容测试页面",
+          "pathName": "packageA/pages/test/test",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "我的",
           "pathName": "pages/my/my",
           "query": "",

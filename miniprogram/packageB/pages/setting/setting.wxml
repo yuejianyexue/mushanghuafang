@@ -1,0 +1,14 @@
+<view class="contain">
+  <view class="modifyMy" >
+  <view >修改个人资料<view class="icon iconfont icon-gengduo"></view></view>
+  <view>我的收货地址<view class="icon iconfont icon-gengduo"></view></view>
+
+</view>
+<view class="fankui">
+  <view>问题反馈<view class="icon iconfont icon-gengduo"></view></view>
+  <view class="line" ></view>
+  <view>联系我们<view class="icon iconfont icon-gengduo"></view></view>
+  <view class="line" ></view>
+  <view>授权信息<view class="icon iconfont icon-gengduo"></view></view>
+</view>
+</view>

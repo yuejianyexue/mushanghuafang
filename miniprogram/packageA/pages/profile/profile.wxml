@@ -8,17 +8,7 @@
 </view>
 </view>
 
-
-
-
-
-
-
-
-
-  <navigator open-type="navigate" class="login-nav" url="/packageA/pages/login/login">登录</navigator>
-
-
+  <navigator open-type="navigate" class="login-nav" >保存</navigator>
 
 
 </view>

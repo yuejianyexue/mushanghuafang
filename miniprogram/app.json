@@ -13,7 +13,16 @@
         "pages/list/list",
         "pages/login/login",
         "pages/commodity/commodity",
-        "pages/profile/profile"
+        "pages/profile/profile",
+        "pages/test/test",
+        "pages/detail/detail"
+
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pages/setting/setting"
       ]
     }
   ],
@@ -56,6 +65,9 @@
   "style": "v2",
   "componentFramework": "glass-easel",
   "usingComponents": {
+    "custom-checkbox": "./components/custom-checkbox/custom-checkbox",
+    "Store-test":"./components/Store-test/Store-test",
+    "computed-learn":"./components/computed-learn/computed-learn",
     "van-dialog": "@vant/weapp/dialog/index",
     "van-icon": "@vant/weapp/icon/index",
     "van-empty": "@vant/weapp/empty/index",

@@ -1,0 +1,41 @@
+.modifyMy {
+  view {
+    background-color: #fff;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rpx 5rpx 0rpx 30rpx;
+    border-radius: 15rpx;
+    margin: 20rpx;
+  }
+}
+
+.fankui {
+  border-radius: 15rpx;
+  background-color: #fff;
+  margin: 0rpx 20rpx;
+
+  view {
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rpx 15rpx 0rpx 30rpx;
+  }
+
+  .line {
+    height: 1px;
+    background-color: rgba(153, 153, 153, 0.5);
+    margin: 0 30rpx
+  }
+}
+
+.contain {
+  background-color: rgba(153, 153, 153, 0.1);
+  height: 100vh;
+}
+
+.icon {
+  color: rgba(153, 153, 153, 0.493);
+}

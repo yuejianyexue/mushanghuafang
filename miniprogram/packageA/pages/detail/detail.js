@@ -5,8 +5,7 @@ Page({
 	goodsInfo: {}, // 商品详情
     show: false, // 控制加入购物车和立即购买弹框的显示
     count: 1, // 商品购买数量，默认是 1
-    blessing: '', // 祝福语
-    Gobuy:1
+    blessing: '' // 祝福语
   },
 
   // 加入购物车

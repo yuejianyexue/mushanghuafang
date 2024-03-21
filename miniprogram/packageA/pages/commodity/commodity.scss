@@ -13,7 +13,7 @@
 }
 
 .commodity{
-  background-color: rgba(250, 205, 205, 0.651);
+  background-color: rgba(253, 240, 240, 0.74);
   // padding: 10rpx;
   .show{
     background-color: #Fff;
@@ -106,6 +106,27 @@
       border-radius: 20rpx;
       padding: 10rpx;
       margin: 15rpx;
+      .jieshao-left{
+        width: 100rpx;
+        view{
+          height: 50rpx;
+        }
+      }
+      .jieshao-right{
+        .text{
+          height: 50rpx;
+        }
+      }
     }
+  }
+}
+.line{
+  height: 1px;
+  background-color: rgba(153, 153, 153, 0.205);
+  margin: 0 30rpx
+}
+.van-goods-action{
+  button{
+    width: 100%
   }
 }

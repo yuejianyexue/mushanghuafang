@@ -1,3 +1,5 @@
+import {toast} from '../utils/extendApi'
+
 /**
  * @description 存储数据
  * @param {*} key 本地缓存中指定的 key
@@ -23,6 +25,7 @@ export const getStorage = (key) => {
       return value
     }
   } catch (error) {
+    toast({title:'读取数据异常',icon:'error'})
     console.error(`读取指定 ${key} 数据发生了异常`, error)
   }
 }

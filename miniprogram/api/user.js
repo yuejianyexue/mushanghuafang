@@ -7,3 +7,12 @@ import http from '../utils/http'
 export const reqLogin = (code)=>{
   return http.get(`/weixin/wxLogin/${code}`)
 }
+
+/**
+ * @description 获取用户信息
+ * @returns Promise
+ */
+
+ export const reqUserInfo = () =>{
+   return http.get('/weixin/getuserInfo')
+ }

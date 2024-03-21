@@ -1,0 +1,6 @@
+<view class="custom-checkbox-contain">
+<view class="custom-checkbox-box {{isCheckde==true? '':'active'}}" >
+  <checkbox catch:tap="updateChecked" checked="{{isCheckde}}"  />
+  自定义组件测试
+</view>
+</view>

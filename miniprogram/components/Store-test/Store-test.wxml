@@ -1,0 +1,5 @@
+<view> {{numA}} + {{numB}} = {{sum}}</view>
+<text>(numA+numB=sum)</text>
+<view></view>
+<button size="mini" style="display: inline-block;font-size: 30rpx;white-space:pre-wrap" type="default" plain catch:tap="update">更新两个属性(都+=1)</button>
+<button size="mini" style="display: inline-block;font-size: 30rpx;" type="default" plain catch:tap="redate">重置(sumA=1,sumB=2)</button>

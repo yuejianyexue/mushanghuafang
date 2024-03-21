@@ -1,0 +1,8 @@
+<view class="title">
+  <text>computed计算属性</text>
+  <text>watch监听</text>
+</view>
+<view> {{a}} + {{b}} = {{total}}
+  <button type="default" size="mini" style="margin: 0rpx 50rpx ;" bind:tap="update">更新数据</button>
+  <view style="display: inline-block;" wx:if="{{watch_output[0]}}">a: {{watch_output[0]}}，b: {{watch_output[1]}}</view>
+</view>

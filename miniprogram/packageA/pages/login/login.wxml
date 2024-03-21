@@ -4,3 +4,6 @@
 > 
 <van-button class="bottom-button" round type="danger" bind:tap="login" >点击授权登录</van-button>
 </van-empty>
+<!-- <view>{{token}}</view>
+ -->
+ <view>{{userInfo.nickname}}</view>

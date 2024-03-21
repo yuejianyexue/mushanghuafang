@@ -1,5 +1,7 @@
 <view>
   <!-- 购物车列表结构 -->
+
+
   <view
     wx:if="{{ cartList.length }}"
     class="container goods-wrap"
@@ -38,12 +40,12 @@
 
   <!-- 购物车列表为空展示的结构 -->
   <van-empty wx:else description="{{ emptyDes }}">
-    <navigator url="/pages/index/index">
-      <van-button round type="danger" class="bottom-button">去购物</van-button>
+    <navigator  class="bottom-button" open-type="switchTab" url="/pages/index/index">
+      <van-button round type="danger">去购物</van-button>
     </navigator>
 
-    <navigator url="/pages/login/login">
-      <van-button round type="danger" class="bottom-button">去登录</van-button>
+    <navigator wx:if="{{!token}}" class="bottom-button"  open-type="navigate" url="/packageA/pages/login/login">
+      <van-button round type="danger" >去登录</van-button>
     </navigator>
   </van-empty>
 

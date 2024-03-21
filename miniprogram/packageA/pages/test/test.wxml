@@ -1,0 +1,27 @@
+<!-- 自定义组件 -->
+<custom-checkbox/>
+<view class="line"></view>
+<!-- 本地存储 -->
+<button size="mini" plain type="warn" bind:tap="setStorage" class="Storage-button">存储</button>
+<button size="mini" plain type="primary" bind:tap="getStorage" class="Storage-button">获取</button>
+<button size="mini" plain type="warn" bind:tap="removeStorage" class="Storage-button">删除</button>
+<button size="mini" plain type="primary" bind:tap="clearStorage" class="Storage-button">清空</button>
+<view class="line"></view>
+<!-- 授权登录 -->
+<view>
+  <van-button round type="danger" bind:tap="login" >点击授权登录</van-button>
+  <view style="white-space:pre-wrap" wx:if="{{output[0]}}" > 临时登录token:\n{{output[0]}}
+  服务器返回token:\n{{output[1]}}</view>
+</view>
+<view class="line"></view>
+<!-- Store对象 -->
+<Store-test/>
+<view class="line"></view>
+<!-- computed计算属性 -->
+<computed-learn/>
+<view class="line"></view>
+<navigator url="/packageA/pages/detail/detail" open-type="navigate">111</navigator>
+<view class="line"></view>
+
+
+
