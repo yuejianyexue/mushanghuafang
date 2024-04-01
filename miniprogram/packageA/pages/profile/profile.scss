@@ -70,7 +70,15 @@ button{
 
   .cancel {
     color: #333;
-    font-size: 34rpx;
+    font-size: 36rpx;
+    height: 60rpx;
+    margin:20rpx 10rpx;
+
+  }
+  .confirm{
+    font-size: 36rpx;
+    height: 60rpx;
+    margin:20rpx 30rpx;
   }
 }
 

@@ -34,6 +34,11 @@ methods:{
       url: '/packageA/pages/login/login'
     })
   },
+  Profile(){
+    wx.navigateTo({
+      url: '/packageA/pages/profile/profile',
+    })
+  }
 }
   
 })

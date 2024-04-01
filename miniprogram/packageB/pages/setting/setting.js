@@ -7,6 +7,12 @@ Page({
   data: {
 
   },
+  Repeated(){
+    // 未开发功能页面
+    wx.navigateTo({
+      url: '/packageB/pages/Repeated/Repeated',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

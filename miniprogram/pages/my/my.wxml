@@ -21,7 +21,7 @@
     </view>
 
     <!-- 登录以后的面板 -->
-    <view wx:else class="user-container section">
+    <view wx:else bind:tap="Profile" class="user-container section">
       <view class="avatar-container">
         <image src="{{userInfo.headimgurl}}"></image>
         <view class="no-login">

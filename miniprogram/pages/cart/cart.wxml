@@ -1,7 +1,5 @@
 <view>
   <!-- 购物车列表结构 -->
-
-
   <view
     wx:if="{{ cartList.length }}"
     class="container goods-wrap"

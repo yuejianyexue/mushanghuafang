@@ -6,7 +6,7 @@
  */
 const toast = ({
   title = '数据加载中...',
-  icon = 'loading',
+  icon = 'none',
   duration = 1000,
   mask = true
 } = {}) => {

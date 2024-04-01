@@ -9,6 +9,27 @@
     "miniprogram": {
       "list": [
         {
+          "name": "购物车",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "商品购买",
+          "pathName": "packageA/pages/detail/detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "新增地址",
+          "pathName": "packageB/pages/address/list/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/profile/profile",
           "pathName": "packageA/pages/profile/profile",
           "query": "",

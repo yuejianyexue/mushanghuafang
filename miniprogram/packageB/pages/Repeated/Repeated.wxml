@@ -1,0 +1,7 @@
+<view class="tips" >当前页面/功能，由于一些限制或者原因尚未开发，您可以：</view>
+<view class="vanButton"><van-button  round type="danger" bind:tap="re" >返回上一级</van-button></view>
+<!-- <view class="tips">或者：</view>
+<view class="vanButton"><van-button  round type="danger" >返回上一级</van-button></view>
+<view class="vanButton"><van-button  round type="danger" >返回上一级</van-button></view>
+<view class="vanButton"><van-button  round type="danger" >返回上一级</van-button></view> -->
+

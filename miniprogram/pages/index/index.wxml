@@ -1,83 +1,52 @@
+
+<!-- 引入骨架屏 -->
+<import src="./skeleton/index.skeleton"/>
+<!-- 使用骨架屏 -->
+<template is="skeleton" wx:if="{{loading}}" />
+
+<!-- 使用骨架屏以后要在加载完的页面上添加wx:else -->
+<view wx:else class="index">
 <!-- 组件1 轮播图 -->
 <view class="swiper">
   <swiper autoplay="true" interval="3000" indicator-dots="true" indicator-color="#fff" indicator-active-color="#f3514f" circular="true">
-    <swiper-item>
-    <image src="../../assets/banner/banner-1.png" mode=""/>
-    </swiper-item>
-    <swiper-item>
-      <image src="../../assets/banner/banner-2.png" mode=""/>
-    </swiper-item>
-    <swiper-item>
-      <image src="../../assets/banner/banner-3.png" mode=""/>
-    </swiper-item>
+    <navigator wx:for="{{bannerList}}" hover-class="none" open-type="navigate" url="/packageA/pages/detail/detail?goodsId={{item.id}}">
+      <swiper-item>
+        <image src="{{item.imageUrl}}" mode="" />
+      </swiper-item>
+    </navigator>s
   </swiper>
 </view>
 <!-- 组件2 信息 -->
 <view class="info">
-<text><text class="iconfont icon-peisong"></text>同城配送</text>
-<text><text class="iconfont icon-icon"></text>行业龙头</text>
-<text><text class="iconfont icon-shijian"></text>半小时送达</text>
-<text><text class="iconfont icon-haoping"></text>100%好评</text>
+  <text><text class="iconfont icon-peisong"></text>同城配送</text>
+  <text><text class="iconfont icon-icon"></text>行业龙头</text>
+  <text><text class="iconfont icon-shijian"></text>半小时送达</text>
+  <text><text class="iconfont icon-haoping"></text>100%好评</text>
 </view>
 <!-- 组件3 商品导航 -->
-<view class="good-nav">
-  
-  <view wx:for="{{5}}" wx:key="index">
-  <navigator open-type="navigate" url="/packageA/pages/commodity/commodity">
-  <image src="../../assets/images/category/cate-{{index+1}}.png" mode=""/>
-    <text>鲜花玫瑰</text></navigator>
+<entrance cateList="{{categoryList}}"></entrance>
+<!-- 广告区域 -->
+<view class="adver">
+  <view class="adver-left">
+    <navigator url="/packageA/pages/commodityList/list/list?category2Id={{activeList[0].category2Id}}">
+      <image src="{{activeList[0].imageUrl}}" mode="widthFix" />
+    </navigator>
+  </view>
+
+  <view class="adver-right">
+    <view>
+      <navigator url="/packageA/pages/commodityList/list/list?category2Id={{activeList[1].category2Id}}">
+      <image src="{{activeList[1].imageUrl}}" mode="widthFix" />
+      </navigator>
+    </view>
+    <view>
+      <navigator url="/packageA/pages/commodityList/list/list?category2Id={{activeList[2].category2Id}}">
+      <image src="{{activeList[2].imageUrl}}" mode="widthFix" />
+      </navigator>
+    </view>
   </view>
 </view>
-<!-- 组件4 推荐商品 -->
-<view class="good-hot">
-  <scroll-view scroll-x="true" class="scroll-x">
-    <view>
-    <navigator open-type="navigate" url="/packageA/pages/commodity/commodity" class="good-item">
-      <image src="/assets/images/floor/1.png"></image>
-      <text>鲜花玫瑰</text>
-      <text>66.6元</text>
-    </navigator>
-    </view>
-    <view>
-    <view class="good-item">
-      <image src="/assets/images/floor/2.png"></image>
-      <text>鲜花玫瑰</text>
-      <text>66.6元</text>
-    </view>
-    </view>
-    <view>
-    <view class="good-item">
-      <image src="/assets/images/floor/3.png"></image>
-      <text>鲜花玫瑰</text>
-      <text>66.6元</text>
-    </view>
-    </view>
-
-    <view>
-    <view class="good-item">
-      <image src="/assets/images/floor/4.png"></image>
-      <text>鲜花玫瑰</text>
-      <text>66.6元</text>
-    </view>
-    </view>
-
-    <view>
-    <view class="good-item">
-      <image src="/assets/images/floor/5.png"></image>
-      <text>鲜花玫瑰</text>
-      <text>66.6元</text>
-    </view>
-    </view>
-  </scroll-view>
+<!-- 商品列表 -->
+<goods-list title="猜你喜欢" list="{{guessList}}"></goods-list>
+<goods-list title="人气推荐" list="{{hotList}}"></goods-list>
 </view>
-<!-- 更多推荐 -->
-<view class="good-more">更多推荐</view>
-<view  class="show">
-<view wx:for="{{20}}" wx:key="index"  class="{{index%6==0 && 'top'}}">
-<navigator  url="/">
-<image src="../../assets/images/floor/{{ index%5 +1}}.png" mode="aspectFill"/>
-<text>鲜花玫瑰</text>
-</navigator>
-</view>
-</view>
-

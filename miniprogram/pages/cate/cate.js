@@ -33,6 +33,7 @@ Page({
   onLoad(options) {
     // itemActive(0)
     // 调用商品分类数据的方法
+   
     this.getCategoryData()
   },
 

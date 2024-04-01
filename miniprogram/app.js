@@ -2,10 +2,10 @@
 import {modal, toast} from './utils/extendApi'
 App({
   data:{
-    commodityTestURL:'/packageA/pages/commodity/commodity'
+    commodityTestURL:'/packageA/pages/commodityList/commodity/commodity'
   },
 onShow(){
-  toast()
+  toast({icon:'loading'})
   
   // 获取当前小程序的账号信息
   // const accountInfo = wx.getAccountInfoSync()

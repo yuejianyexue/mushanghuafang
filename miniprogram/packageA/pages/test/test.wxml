@@ -20,7 +20,7 @@
 <!-- computed计算属性 -->
 <computed-learn/>
 <view class="line"></view>
-<navigator url="/packageA/pages/detail/detail" open-type="navigate">111</navigator>
+<navigator url="/packageB/pages/Repeated/Repeated" open-type="navigate">Repeated</navigator>
 <view class="line"></view>
 
 

@@ -6,4 +6,4 @@
 </van-empty>
 <!-- <view>{{token}}</view>
  -->
- <view>{{userInfo.nickname}}</view>
+ <!-- <view>{{userInfo.nickname}}</view> -->

@@ -9,19 +9,23 @@
     {
       "root": "packageA",
       "pages": [
-        "pages/list/list",
         "pages/login/login",
-        "pages/commodity/commodity",
+        "pages/commodityList/commodity/commodity",
         "pages/profile/profile",
         "pages/test/test",
-        "pages/detail/detail"
-
+        "pages/detail/detail",
+        "pages/commodityList/list/list"
       ]
     },
     {
       "root": "packageB",
       "pages": [
-        "pages/setting/setting"
+        "pages/setting/setting",
+        "pages/address/add/index",
+        "pages/address/list/index",
+        "pages/Repeated/Repeated",
+        "pages/order/list/list",
+        "pages/order/detail/detail"
       ]
     }
   ],
@@ -65,8 +69,9 @@
   "componentFramework": "glass-easel",
   "usingComponents": {
     "custom-checkbox": "./components/custom-checkbox/custom-checkbox",
-    "Store-test":"./components/Store-test/Store-test",
-    "computed-learn":"./components/computed-learn/computed-learn",
+    "goods-list": "./components/goods-list/goods-list",
+    "Store-test": "./components/Store-test/Store-test",
+    "computed-learn": "./components/computed-learn/computed-learn",
     "van-dialog": "@vant/weapp/dialog/index",
     "van-icon": "@vant/weapp/icon/index",
     "van-empty": "@vant/weapp/empty/index",

@@ -12,6 +12,9 @@ import {
 import {
   toast
 } from '../../../utils/extendApi'
+
+
+
 Page({
   // 注册userBehavior ,这样userBehavior的数据就会映射到data中
   behaviors: [userBehavior],
@@ -51,13 +54,15 @@ Page({
     })
 
   },
-  getNickName(event){
+  getNickName(event) {
     // console.log(event)
-    const {nickname} = event.detail.value
+    const {
+      nickname
+    } = event.detail.value
     // console.log(nickname)
     this.setData({
-      'userInfo.nickname':nickname,
-      isShowPopup:false
+      'userInfo.nickname': nickname,
+      isShowPopup: false
 
     })
   },
@@ -86,7 +91,7 @@ Page({
   onUpdateNickName() {
     this.setData({
       isShowPopup: true,
-      'userInfo.nickname':this.data.userInfo.nickname
+      'userInfo.nickname': this.data.userInfo.nickname
     })
   },
 

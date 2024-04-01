@@ -4,12 +4,13 @@
       <view>修改个人资料<view class="icon iconfont icon-gengduo"></view>
       </view>
     </navigator>
-
+    <navigator open-type="navigate" url="/packageB/pages/address/list/index">
     <view>我的收货地址<view class="icon iconfont icon-gengduo"></view>
     </view>
+  </navigator>
 
   </view>
-  <view class="fankui">
+  <view bind:tap="Repeated" class="fankui">
     <view>问题反馈<view class="icon iconfont icon-gengduo"></view>
     </view>
     <view class="line"></view>

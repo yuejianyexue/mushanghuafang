@@ -1,3 +1,5 @@
+@import "./skeleton/index.skeleton.scss";
+
 page{
   background-color: #efefef !important;
   padding: 16rpx;
@@ -84,6 +86,37 @@ page{
    
 }
 }
+// 广告区
+.adver {
+  display: flex;
+  width: 100%;
+  padding: 10rpx 8rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 18rpx;
+  overflow: hidden;
+
+  .adver-left {
+    width: 50%;
+    padding: 8rpx 8rpx 0rpx 8rpx;
+  }
+
+  .adver-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 8rpx 8rpx 0rpx 8rpx;
+
+    view:last-child {
+      padding-top: 8rpx;
+    }
+  }
+
+  image {
+    width: 100%;
+  }
+}
+
 // 更多推荐区
 .good-more{
   font-size: 45rpx;

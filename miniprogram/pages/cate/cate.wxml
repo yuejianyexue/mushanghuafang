@@ -1,25 +1,25 @@
 <view style="background-color: aliceblue;">
-<!-- 分类页容器 -->
-<!-- 搜索栏 -->
-<view class="search"> 搜索栏占位</view>
-<view class="cate-ctnr" >
-  <!--分类页左侧导航  -->
-  <scroll-view class="cate-left" scroll-y>
-    <view catch:tap="itemActive" data-index="{{index}}" class="cate-item {{tab==index ?'active':''}}" wx:for="{{itemList}}" wx:key="id" >{{item.name}}</view>
-  </scroll-view>
-  <!-- 右侧选项 -->
-  <scroll-view class="cate-right" scroll-y>
-  <view class="back">
-  <image style="width: 96%; height: 250rpx;margin: 10rpx;border-radius: 10rpx;" src="../../assets/images/elder.jpg" mode="aspectFill"/>
+  <!-- 分类页容器 -->
+  <!-- 搜索栏 -->
+  <view class="search"> 搜索栏占位</view>
+  <view class="cate-ctnr">
+    <!--分类页左侧导航  -->
+    <scroll-view class="cate-left" scroll-y>
+      <view catch:tap="itemActive" data-index="{{index}}" class="cate-item {{tab==index ?'active':''}}" wx:for="{{itemList}}" wx:key="id">{{item.name}}</view>
+    </scroll-view>
+    <!-- 右侧选项 -->
+    <scroll-view class="cate-right" scroll-y>
+      <view class="back">
+        <image class="images" src="../../assets/images/elder.jpg" mode="aspectFill" />
+      </view>
+      <view class="back">
+        <view wx:for="{{itemList[tab].children}}" wx:key="index" class="item-right">
+          <navigator class="navigator" url="/packageA/pages/commodityList/list/list?category2Id={{item.id}}">
+            <image src="{{item.imageUrl}}" mode="" />
+            <text class="itemText">{{item.name}}</text>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
   </view>
-  <view class="back">
-    <view wx:for="{{itemList[tab].children}}" wx:key="index" class="item-right">
-    <navigator class="navigator" url="#">
-    <image src="{{item.imageUrl}}" mode=""/>
-    <text class="itemText">{{item.name}}</text>
-    </navigator>
-    </view>
-  </view>
-  </scroll-view>
-</view>
 </view>

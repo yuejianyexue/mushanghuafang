@@ -1,4 +1,3 @@
-// pages/goods/detail/index.js
 Page({
   // 页面的初始数据
   data: {
@@ -11,6 +10,7 @@ Page({
 
   // 加入购物车
   handleAddcart() {
+
     this.setData({
       show: true
     })

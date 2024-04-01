@@ -4,13 +4,13 @@
     <view class="swiper">
       <swiper autoplay="true" interval="3000" indicator-dots="true" indicator-color="#fff" indicator-active-color="#f3514f" circular="true">
         <swiper-item>
-          <image src="../../../assets/images/floor/1.png" mode="aspectFill" />
+          <image src="../../../../assets/images/floor/1.png" mode="aspectFill" />
         </swiper-item>
         <swiper-item>
-          <image src="../../../assets/images/floor/2.png" mode="aspectFill" />
+          <image src="../../../../assets/images/floor/2.png" mode="aspectFill" />
         </swiper-item>
         <swiper-item>
-          <image src="../../../assets/images/floor/3.png" mode="aspectFill" />
+          <image src="../../../../assets/images/floor/3.png" mode="aspectFill" />
         </swiper-item>
       </swiper>
     </view>
@@ -60,13 +60,13 @@
       <view class="goods-item">
         <!-- 需要购买的商品图片 -->
         <view class="mid">
-          <image class="img" src="/assets/images/floor-img.jpg" />
+          <image class="img" src="../../../../assets/images/floor/1.png" />
         </view>
 
         <!-- 商品基本信息 -->
         <view class="right">
           <!-- 商品名字 -->
-          <view class="title"> 亲爱的/情人节网红款/19枝 </view>
+          <view class="title"> 亲爱的/情人节网红/19枝 </view>
           <!-- 商品价格 -->
           <view class="buy">
             <view class="price">
@@ -79,6 +79,7 @@
               <!-- Stepper 步进器，由增加按钮、减少按钮和输入框组成，控制购买数量 -->
               <van-stepper value="{{ count }}" bind:change="onChangeGoodsCount" />
             </view>
+            
           </view>
         </view>
       </view>
